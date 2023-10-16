@@ -7,7 +7,7 @@ import pandas as pd
 #import dataset and set x,y 
 dataset = pd.read_csv('/Users/mitch/Downloads/Machine Learning A-Z (Codes and Datasets)/Part 2 - Regression/Section 6 - Polynomial Regression/Python/Position_Salaries.csv')
 x = dataset.iloc[:,1:-1].values #taking only the middle column , and all the rows 
-y = dataset.iloc[:,-1].values #taking just the last row 
+y = dataset.iloc[:,-1].values #taking just the last column 
 
 #linear regression model on dataset 
 from sklearn.linear_model import LinearRegression
